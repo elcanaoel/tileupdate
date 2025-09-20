@@ -33,6 +33,13 @@ npm run dev
 ```
 Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
+If port 3000 is already in use, the application will automatically start on the next available port (e.g., 3001, 3002, etc.) and display the new port in the terminal.
+
+To manually specify a port:
+```bash
+npx next dev -p 3001
+```
+
 ### Production Mode
 
 To run the site in production mode (requires building first):
@@ -40,7 +47,12 @@ To run the site in production mode (requires building first):
 npm run build
 npm start
 ```
-Then open [http://localhost:3000](http://localhost:3000) in your browser.
+By default, the application will start on port 3000. To specify a different port:
+```bash
+PORT=3001 npm start
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser (replace 3000 with your chosen port).
 
 ## Getting Started
 
@@ -62,6 +74,19 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+If port 3000 is occupied, check the terminal output for the actual port being used.
+
+### Troubleshooting Port Conflicts on Windows
+
+If you encounter a port conflict on Windows, you can either:
+
+1. Use a different port as shown above, or
+2. Free up port 3000 by terminating the process using it:
+   ```bash
+   netstat -ano | findstr :3000
+   taskkill /PID <process_id> /F
+   ```
 
 ### Build
 
@@ -99,13 +124,3 @@ taylors-floors-next/
 ## Dependencies
 
 - Next.js 15
-- React 19
-- React DOM 19
-
-## Author
-
-Joel Enejo
-
-## Site Creator Credit
-
-Site created and designed by Joel
