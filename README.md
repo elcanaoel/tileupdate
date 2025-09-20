@@ -21,6 +21,27 @@ The original static HTML/CSS/JavaScript website has been converted to a modern N
 5. **Styling**: Moved all CSS to global stylesheets
 6. **Fonts and Icons**: Integrated Google Fonts and Font Awesome via CDN
 
+## How to Start the Site
+
+There are two ways to run the site locally:
+
+### Development Mode
+
+For development and testing purposes:
+```bash
+npm run dev
+```
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Production Mode
+
+To run the site in production mode (requires building first):
+```bash
+npm run build
+npm start
+```
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
 ## Getting Started
 
 ### Prerequisites
