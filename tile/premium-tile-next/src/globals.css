@@ -1,0 +1,12 @@
+.site-header {
+  /* 根据需要调整 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.site-logo {
+  max-width: 200px; /* 根据需要调整 */
+  height: auto;
+}

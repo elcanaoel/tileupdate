@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ReactNode } from "react";
+import logo from '../public/taylorLogo.png'; // 更新为正确的相对路径
 
 export const metadata: Metadata = {
   title: "Taylor's Floors Inc | Premium Flooring Solutions",
@@ -19,9 +20,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body>
-        {/* Adding logo */}
+        {/* 添加logo */}
         <header className="site-header">
-          <img src="/taylorLogo.png" alt="Taylor's Floors Inc Logo" className="site-logo" />
+          <img src={logo} alt="Taylor's Floors Inc Logo" className="site-logo" />
         </header>
         {children}
       </body>

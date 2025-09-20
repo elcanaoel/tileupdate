@@ -1,6 +1,6 @@
-# Tailor Floors Inc - Next.js Conversion
+# Taylor Floors Inc - Next.js Conversion
 
-This project is a conversion of the original Tailor Floors Inc website to a Next.js application.
+This project is a conversion of the original Taylor Floors Inc website to a Next.js application.
 
 ## Overview
 
@@ -78,7 +78,7 @@ npm start
 ## Project Structure
 
 ```
-tailor-floors-next/
+taylors-floors-next/
 ├── public/              # Static assets
 ├── src/
 │   └── app/             # App router directory
