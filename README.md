@@ -1,6 +1,6 @@
-# Premium Tile - Next.js Conversion
+# Tailor Floors Inc - Next.js Conversion
 
-This project is a conversion of the original Premium Tile website to a Next.js application.
+This project is a conversion of the original Tailor Floors Inc website to a Next.js application.
 
 ## Overview
 
@@ -78,7 +78,7 @@ npm start
 ## Project Structure
 
 ```
-premium-tile-next/
+tailor-floors-next/
 ├── public/              # Static assets
 ├── src/
 │   └── app/             # App router directory

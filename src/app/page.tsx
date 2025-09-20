@@ -135,7 +135,7 @@ export default function Home() {
         <div className="container">
           <div className="header-content">
             <div className="logo">
-              <h2>Premium<span>Tile</span></h2>
+              <h2>Tailor<span>Floors</span></h2>
             </div>
             <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
               <ul>
@@ -161,8 +161,8 @@ export default function Home() {
       <section id="home" className="hero">
         <div className="container">
           <div className="hero-content">
-            <h1 className="hero-title">Transform Your Space With Premium Tile Designs</h1>
-            <p className="hero-subtitle">Luxury tiling solutions for residential and commercial spaces. Expert installation, premium materials, and unmatched craftsmanship.</p>
+            <h1 className="hero-title">Transform Your Space With Tailor Floors Inc</h1>
+            <p className="hero-subtitle">Premium flooring solutions for residential and commercial spaces. Expert installation, premium materials, and unmatched craftsmanship.</p>
             <div className="hero-buttons">
               <button className="btn btn-primary" onClick={() => scrollToSection('gallery')}>View Our Work</button>
               <button className="btn btn-secondary">Free Consultation</button>
@@ -343,7 +343,7 @@ export default function Home() {
                 <i className="fas fa-envelope"></i>
                 <div>
                   <h3>Email Us</h3>
-                  <p>info@premiumtile.com</p>
+                  <p>info@tailorfloors.com</p>
                 </div>
               </div>
               <div className="contact-item">
@@ -381,8 +381,8 @@ export default function Home() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-col">
-              <h3>Premium<span>Tile</span></h3>
-              <p>Transforming spaces with premium tiling solutions since 2008. We bring creativity, quality, and expertise to every project.</p>
+              <h3>Tailor<span>Floors</span></h3>
+              <p>Transforming spaces with premium flooring solutions since 2008. We bring creativity, quality, and expertise to every project.</p>
               <div className="social-links">
                 <a href="#"><i className="fab fa-facebook-f"></i></a>
                 <a href="#"><i className="fab fa-instagram"></i></a>

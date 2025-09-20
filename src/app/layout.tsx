@@ -3,8 +3,8 @@ import "./globals.css";
 import { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Premium Tile Designs | Luxury Tiling Solutions",
-  description: "Luxury tiling solutions for residential and commercial spaces. Expert installation, premium materials, and unmatched craftsmanship.",
+  title: "Tailor Floors Inc | Premium Flooring Solutions",
+  description: "Premium flooring solutions for residential and commercial spaces. Expert installation, premium materials, and unmatched craftsmanship.",
 };
 
 export default function RootLayout({
