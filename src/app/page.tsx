@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from 'react';
+import SlidingGallery from '@/components/SlidingGallery';
+import VideoGallery from '@/components/VideoGallery';
 
 export default function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -142,6 +144,7 @@ export default function Home() {
                 <li><a onClick={() => scrollToSection('home')}>Home</a></li>
                 <li><a onClick={() => scrollToSection('services')}>Services</a></li>
                 <li><a onClick={() => scrollToSection('gallery')}>Gallery</a></li>
+                <li><a onClick={() => scrollToSection('video-gallery')}>Videos</a></li>
                 <li><a onClick={() => scrollToSection('about')}>About</a></li>
                 <li><a onClick={() => scrollToSection('testimonials')}>Testimonials</a></li>
                 <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
@@ -219,269 +222,12 @@ export default function Home() {
             <h2>Our Gallery</h2>
             <p>Explore our recent tiling projects</p>
           </div>
-          <div className="gallery-grid">
-            {/* Local gallery images */}
-            <div className="gallery-item">
-              <img src="/gallery/project_1.jpeg" alt="Project 1" />
-              <div className="gallery-overlay">
-                <h3>Tile Installation</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_2.jpeg" alt="Project 2" />
-              <div className="gallery-overlay">
-                <h3>Flooring Project</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_3_.jpeg" alt="Project 3" />
-              <div className="gallery-overlay">
-                <h3>Kitchen Tiling</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_4_.jpeg" alt="Project 4" />
-              <div className="gallery-overlay">
-                <h3>Bathroom Renovation</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_5_.jpeg" alt="Project 5" />
-              <div className="gallery-overlay">
-                <h3>Living Room Flooring</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_6_.jpeg" alt="Project 6" />
-              <div className="gallery-overlay">
-                <h3>Commercial Tiling</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_7_.jpeg" alt="Project 7" />
-              <div className="gallery-overlay">
-                <h3>Tile Pattern</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_8_.jpeg" alt="Project 8" />
-              <div className="gallery-overlay">
-                <h3>Floor Installation</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_9_.jpeg" alt="Project 9" />
-              <div className="gallery-overlay">
-                <h3>Modern Design</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_10_.jpeg" alt="Project 10" />
-              <div className="gallery-overlay">
-                <h3>Tile Work</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_11_.jpeg" alt="Project 11" />
-              <div className="gallery-overlay">
-                <h3>Residential Flooring</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_12_.jpeg" alt="Project 12" />
-              <div className="gallery-overlay">
-                <h3>Custom Design</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_13_.jpeg" alt="Project 13" />
-              <div className="gallery-overlay">
-                <h3>Stone Tiles</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_14_.jpeg" alt="Project 14" />
-              <div className="gallery-overlay">
-                <h3>Elegant Finish</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_15_.jpeg" alt="Project 15" />
-              <div className="gallery-overlay">
-                <h3>Professional Work</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_16_.jpeg" alt="Project 16" />
-              <div className="gallery-overlay">
-                <h3>Quality Craftsmanship</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_17_.jpeg" alt="Project 17" />
-              <div className="gallery-overlay">
-                <h3>Premium Materials</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_18_.jpeg" alt="Project 18" />
-              <div className="gallery-overlay">
-                <h3>Beautiful Finish</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_20_.jpeg" alt="Project 20" />
-              <div className="gallery-overlay">
-                <h3>Tile Detail</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_21_.jpeg" alt="Project 21" />
-              <div className="gallery-overlay">
-                <h3>Expert Installation</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_22_.jpeg" alt="Project 22" />
-              <div className="gallery-overlay">
-                <h3>Creative Design</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_22_1_.jpeg" alt="Project 22 Variation" />
-              <div className="gallery-overlay">
-                <h3>Creative Design</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_23_.jpeg" alt="Project 23" />
-              <div className="gallery-overlay">
-                <h3>Stylish Flooring</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_24_.jpeg" alt="Project 24" />
-              <div className="gallery-overlay">
-                <h3>Modern Kitchen</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_25_.jpeg" alt="Project 25" />
-              <div className="gallery-overlay">
-                <h3>Tile Pattern</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_26_.jpeg" alt="Project 26" />
-              <div className="gallery-overlay">
-                <h3>Beautiful Tilework</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/project_26_1_.jpeg" alt="Project 26 Variation" />
-              <div className="gallery-overlay">
-                <h3>Beautiful Tilework</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/carpet.d8a5a5003f9930fb5d8c.jpeg" alt="Carpet" />
-              <div className="gallery-overlay">
-                <h3>Carpet Installation</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/hardwood.485296570ffc2d9c3593.jpeg" alt="Hardwood" />
-              <div className="gallery-overlay">
-                <h3>Hardwood Flooring</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/laminate.1503e1a6d4c0ea1f734f.jpeg" alt="Laminate" />
-              <div className="gallery-overlay">
-                <h3>Laminate Flooring</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/vinyl.939e25da767409079704.png" alt="Vinyl" />
-              <div className="gallery-overlay">
-                <h3>Vinyl Flooring</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/floor3.b3992e0285552e5998f7.png" alt="Floor" />
-              <div className="gallery-overlay">
-                <h3>Floor Design</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/floor2.ac635d6bd708359d0ff0.jpeg" alt="Floor" />
-              <div className="gallery-overlay">
-                <h3>Floor Installation</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/floor2.ac635d6bd708359d0ff0_1_.jpeg" alt="Floor Variation" />
-              <div className="gallery-overlay">
-                <h3>Floor Installation</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/tile.1a263f22709719661247.jpeg" alt="Tile" />
-              <div className="gallery-overlay">
-                <h3>Tile Selection</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/inst.d27fe870eea8474758f8.jpeg" alt="Installation" />
-              <div className="gallery-overlay">
-                <h3>Professional Installation</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/repair.719090d37d27a55f24e5.jpeg" alt="Repair" />
-              <div className="gallery-overlay">
-                <h3>Floor Repair</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/maintain.9f7aba9c42f3e910420e.jpeg" alt="Maintenance" />
-              <div className="gallery-overlay">
-                <h3>Floor Maintenance</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/about.fa02b2acd2db7158f525.jpeg" alt="About" />
-              <div className="gallery-overlay">
-                <h3>About Our Work</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/fllor3.9bac4e3de0bda139d5da.jpeg" alt="Floor" />
-              <div className="gallery-overlay">
-                <h3>Floor Project</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/hq2.jpeg" alt="HQ Project" />
-              <div className="gallery-overlay">
-                <h3>High Quality Work</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/hq2_1_.jpeg" alt="HQ Project Variation" />
-              <div className="gallery-overlay">
-                <h3>High Quality Work</h3>
-              </div>
-            </div>
-            <div className="gallery-item">
-              <img src="/gallery/floor.438b77f5991f4e9e6dd5.png" alt="Floor" />
-              <div className="gallery-overlay">
-                <h3>Floor Design</h3>
-              </div>
-            </div>
-          </div>
+          <SlidingGallery />
         </div>
       </section>
+
+      {/* Video Gallery Section */}
+      <VideoGallery />
 
       {/* About Section */}
       <section id="about" className="about">
@@ -500,7 +246,7 @@ export default function Home() {
                 <li><i className="fas fa-check-circle"></i> Professional team with extensive experience</li>
                 <li><i className="fas fa-check-circle"></i> Satisfaction guarantee on all projects</li>
               </ul>
-              <button className="btn btn-primary">Learn More About Us</button>
+              <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>Contact Us Today</button>
             </div>
           </div>
         </div>
@@ -532,7 +278,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header">
             <h2>Contact Us</h2>
-            <p>Get a free quote for your tiling project</p>
+            <p>Get in touch for a free consultation</p>
           </div>
           <div className="contact-content">
             <div className="contact-info">
@@ -540,7 +286,7 @@ export default function Home() {
                 <i className="fas fa-map-marker-alt"></i>
                 <div>
                   <h3>Our Location</h3>
-                  <p>123 Design Street, Creative City, CC 10001</p>
+                  <p>123 Design Street, Creative City, CC 12345</p>
                 </div>
               </div>
               <div className="contact-item">
@@ -554,7 +300,7 @@ export default function Home() {
                 <i className="fas fa-envelope"></i>
                 <div>
                   <h3>Email Us</h3>
-                  <p>info@taylorsfloors.com</p>
+                  <p>info@premiumtile.com</p>
                 </div>
               </div>
               <div className="contact-item">
