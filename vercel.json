@@ -1,0 +1,16 @@
+{
+  "buildCommand": "next build --no-lint",
+  "outputDirectory": ".next",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "build": {
+    "env": {
+      "NEXT_LINT_DISABLE": "1"
+    }
+  },
+  "github": {
+    "silent": true
+  },
+  "ignoreCommand": "echo 'false'"
+}
