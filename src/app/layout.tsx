@@ -3,7 +3,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Taylor's Floors Inc | Premium Flooring Solutions",
+  title: "Taylor's Floors Inc ",
   description: "Premium flooring solutions for residential and commercial spaces. Expert installation, premium materials, and unmatched craftsmanship.",
 };
 

@@ -10,6 +10,9 @@ const nextConfig = {
     // Ignore ESLint errors during build (temporary solution)
     ignoreDuringBuilds: true,
   },
+  images: {
+    domains: ['images.unsplash.com', ],
+  }
 };
 
 module.exports = nextConfig;
